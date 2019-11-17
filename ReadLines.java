@@ -5,6 +5,8 @@ import java.io.File;
 
 import decoder.Decoder;
 
+//I am not the author of this file: this is an assigned driver
+
 class ReadLines
 {
 
@@ -31,22 +33,11 @@ class ReadLines
 	    {
 		System.out.println("Error: " + e.getMessage());
 	    }
-		// do stuff here
-		//System.out.println("Hello!");
+
 		Decoder dcdr = new Decoder();
 		dcdr.findMatches(list);
 		dcdr.showMatches();
-		//System.out.println(list.size());
-		/*
-		for (int i = 0; i < list.size(); i++) {
-			try {
-				System.out.println(list.get(i));
-			}
-			catch (Exception e) {
-				System.out.println("Listing Error: " + e.getMessage());
-			}
-		}
-		*/
+
 	}
     }
 }
